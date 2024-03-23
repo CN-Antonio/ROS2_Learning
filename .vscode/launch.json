@@ -1,0 +1,44 @@
+{
+    // 使用 IntelliSense 了解相关属性。 
+    // 悬停以查看现有属性的描述。
+    // 欲了解更多信息，请访问: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "rosrun DBG",
+            "type": "cppdbg",
+            "request": "launch",
+            "program": "/home/antonio/Projects/ROS2_Learning/install/occdet/lib/occdet/occdemo",
+            "args": [
+                "./flashocc.yaml",
+            ],
+            "stopAtEntry": false,
+            "cwd": "${workspaceFolder}",
+            "environment": [],
+            "externalConsole": false,
+            "MIMode": "gdb",
+            "setupCommands": [
+                {
+                    "description": "print for gdb",
+                    "text": "-enable-pretty-printing",
+                    "ignoreFailures": true
+                }
+            ],
+            "preLaunchTask": "ROS2 build"
+        },
+
+        {
+            "name": "roslaunch DBG",
+            "type": "ros",
+            "request": "launch",
+            "target": "/home/antonio/Ros_Learning/src/mv2/launch/run.launch",
+            "preLaunchTask": "catkin_build_mv2"
+        },
+        
+        {
+            "name": "ROS: Attach",
+            "request": "attach",
+            "type": "ros"
+        }
+    ]
+}

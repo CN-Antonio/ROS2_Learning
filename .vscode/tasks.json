@@ -1,0 +1,29 @@
+{   "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "ROS2 build",
+            "type": "shell",
+            "command": "colcon",
+            "args": [
+                "build",
+                // "--directory",
+                // "/home/antonio/Projects/ROS2_Learning",
+                "--parallel-workers", // -j$(nproc)
+                "$(nproc)",
+                // "-DCMAKE_BUILD_TYPE=Debug",
+				// "-DCMAKE_EXPORT_COMPILE_COMMANDS=ON",
+
+                "--packages-select",
+                "occdet"
+			],
+            "group": {
+                "kind":"build",
+                "isDefault":true
+            },
+            "presentation": {
+                "reveal": "always"
+            },
+            "problemMatcher": "$msCompile"
+        },
+    ]
+}
