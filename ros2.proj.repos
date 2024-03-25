@@ -1,0 +1,5 @@
+repositories:
+  occdet:
+    type: git
+    url: https://gitee.com/ant_onio/occdet_ros.git
+    version: master
