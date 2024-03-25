@@ -1,4 +1,4 @@
-{   "version": "2.0.0",
+{
     "tasks": [
         {
             "label": "ROS2 build",
@@ -25,5 +25,6 @@
             },
             "problemMatcher": "$msCompile"
         },
-    ]
+    ],
+    "version": "2.0.0"
 }

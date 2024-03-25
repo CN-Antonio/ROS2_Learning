@@ -8,7 +8,8 @@
             "name": "rosrun DBG",
             "type": "cppdbg",
             "request": "launch",
-            "program": "/home/antonio/Projects/ROS2_Learning/install/occdet/lib/occdet/occdemo",
+            // "program": "/home/antonio/Projects/ROS2_Learning/install/occdet/lib/occdet/occdemo",
+            "program": "/home/antonio/Projects/ROS2_Learning/install/occdet/lib/occdet/test_node",
             "args": [
                 "./flashocc.yaml",
             ],
